@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#172b45">
+<meta name="description" content="DAYORA creates thoughtfully designed digital tools to make everyday life simpler — planners, budgeting tools, study resources and more.">
+<title>DAYORA — Make Every Day Count</title>
+<style>
+:root{--navy:#172b45;--blue:#496987;--pale:#edf1f4;--ivory:#faf9f5;--ink:#263648;--muted:#718092;--line:#dfe5e9;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+.topbar{background:var(--navy);color:#e8edf2;text-align:center;font-size:12px;letter-spacing:.13em;padding:9px 16px}
+header{background:rgba(250,249,245,.94);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{font-family:Georgia,serif;font-size:29px;letter-spacing:.17em;color:var(--navy);font-weight:600}.navlinks{display:flex;gap:34px;align-items:center;font-size:13px;color:#536274}.navlinks a:hover{color:var(--navy)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);color:white;border:1px solid var(--navy);padding:13px 21px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;transition:.2s}.nav-cta:hover,.button:hover{background:#2b4665}.menu{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+.hero{padding:88px 0 78px;background:linear-gradient(120deg,#edf1f3 0%,#f8f7f2 58%,#e8edf0 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);font-weight:650}.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(48px,6vw,76px);line-height:1.04;letter-spacing:-.035em;color:var(--navy);margin:20px 0}.hero h1 em{font-weight:400;color:#71869a}.hero p{max-width:490px;color:#667587;font-size:16px;margin:0 0 30px}.hero-actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap}.button.secondary{background:transparent;color:var(--navy)}.button.secondary:hover{background:#e1e8ed}.micro{font-size:11px;color:#788797;margin-top:17px}
+.visual{min-height:410px;position:relative;display:grid;place-items:center}.visual:before{content:"";position:absolute;width:350px;height:350px;border-radius:50%;background:#dce4e9;right:5%;top:5%}.planner{position:relative;background:#fff;width:min(330px,82%);padding:27px 27px 25px;box-shadow:0 24px 65px #253c5520;transform:rotate(3deg);border:1px solid #e9ecee}.planner-top{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.17em;color:#7c8c9a;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:14px}.planner h3{font-family:Georgia,serif;font-size:29px;font-weight:400;color:var(--navy);margin:18px 0 5px}.planner-date{font-size:10px;color:#8794a1;margin-bottom:19px}.task{display:flex;gap:10px;align-items:center;border-bottom:1px solid #edf0f1;padding:11px 0;font-size:11px;color:#596a7b}.check{width:13px;height:13px;border:1px solid #9eacb8;border-radius:50%}.mini-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:18px}.mini-grid span{background:#eef2f4;height:24px;display:grid;place-items:center;font-size:9px;color:#718092}.mini-grid span.active{background:var(--navy);color:white}
+.section{padding:86px 0}.section-head{text-align:center;max-width:630px;margin:0 auto 43px}.section-head h2{font:400 clamp(34px,4vw,48px)/1.12 Georgia,serif;color:var(--navy);margin:13px 0}.section-head p{color:var(--muted);font-size:14px;margin:0}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.category{background:white;border:1px solid var(--line);padding:25px 22px;min-height:190px;transition:.2s}.category:hover{transform:translateY(-4px);box-shadow:0 14px 30px #1d334010}.cat-icon{width:39px;height:39px;border-radius:50%;background:#edf1f4;color:var(--navy);display:grid;place-items:center;font-family:Georgia,serif;font-size:19px;margin-bottom:23px}.category h3{font:400 22px Georgia,serif;color:var(--navy);margin:0 0 7px}.category p{font-size:12px;color:var(--muted);margin:0}
+.feature{background:#eaf0f3}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.feature-art{background:#dce5eb;min-height:360px;display:grid;place-items:center;padding:35px}.stack{position:relative;width:260px;height:260px}.sheet{position:absolute;width:205px;height:255px;background:#fff;box-shadow:0 15px 35px #20354a20;padding:22px}.sheet.back{transform:rotate(-9deg);left:0;top:0;background:#f9f8f3}.sheet.front{transform:rotate(7deg);right:0;bottom:0}.sheet small{font-size:8px;letter-spacing:.18em;color:#7e8d9b}.sheet strong{display:block;font:26px Georgia,serif;color:var(--navy);font-weight:400;margin:15px 0}.lines{height:1px;background:#dce2e6;margin:17px 0}.feature-copy h2{font:400 43px/1.1 Georgia,serif;color:var(--navy);margin:14px 0}.feature-copy p{color:#667587;font-size:14px;max-width:470px}.ticks{padding:0;list-style:none;color:#536578;font-size:13px;margin:22px 0}.ticks li{margin:10px 0}.ticks li:before{content:"✓";color:#496987;margin-right:11px}
+.coming{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.product{background:white;border:1px solid var(--line);padding:24px}.product-art{height:160px;background:#edf1f4;display:grid;place-items:center;margin-bottom:20px;overflow:hidden}.product-art .mock{width:118px;height:145px;background:#fff;box-shadow:0 10px 24px #1e34421c;padding:16px;transform:rotate(-4deg)}.mock b{font:19px Georgia,serif;color:var(--navy);font-weight:400;display:block;margin:10px 0}.mock i{display:block;height:4px;background:#e2e8ec;margin:8px 0}.product h3{font:400 23px Georgia,serif;color:var(--navy);margin:0 0 6px}.product p{font-size:12px;color:var(--muted);margin:0}.tag{display:inline-block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#627b91;background:#edf2f5;padding:6px 9px;margin-top:16px}
+.statement{background:var(--navy);color:white;text-align:center;padding:76px 20px}.statement h2{font:400 clamp(32px,4vw,48px)/1.15 Georgia,serif;margin:0 auto 14px;max-width:720px}.statement p{color:#c2ced8;font-size:13px;margin:0}
+footer{padding:38px 0;background:#f4f3ee}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-logo{font:24px Georgia,serif;letter-spacing:.16em;color:var(--navy)}footer p{font-size:11px;color:#7b8793;margin:5px 0 0}.footer-note{font-size:11px;color:#7b8793;text-align:right}
+@media(max-width:800px){.hero-grid,.feature-grid{grid-template-columns:1fr;gap:25px}.hero{padding:60px 0}.visual{min-height:350px}.categories{grid-template-columns:repeat(2,1fr)}.coming{grid-template-columns:1fr 1fr}.navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:var(--ivory);padding:22px 24px;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}}
+@media(max-width:520px){.wrap{width:min(100% - 32px,1160px)}.categories,.coming{grid-template-columns:1fr}.section{padding:62px 0}.hero h1{font-size:49px}.visual{min-height:320px}.visual:before{width:285px;height:285px}.feature-art{min-height:310px}.footer-row{align-items:flex-start;flex-direction:column}.footer-note{text-align:left}}
+</style>
+</head>
+<body>
+<div class="topbar">THOUGHTFULLY DESIGNED TOOLS FOR EVERYDAY LIFE</div>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#home" aria-label="DAYORA home">DAYORA</a>
+    <button class="menu" aria-label="Open navigation" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#collections">Collections</a><a href="#our-approach">Our approach</a><a href="#coming-soon">Coming soon</a>
+    </nav>
+    <a class="nav-cta" href="#coming-soon">Explore DAYORA</a>
+  </div>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">A simpler way to do everyday</div>
+      <h1>Make space for<br><em>what matters.</em></h1>
+      <p>Thoughtfully designed digital tools to bring a little more clarity, calm and organisation to everyday life — wherever you are in yours.</p>
+      <div class="hero-actions"><a class="button" href="#collections">Explore our collections</a><a class="button secondary" href="#our-approach">Discover DAYORA</a></div>
+      <div class="micro">Digital tools for study, home, money and everyday planning.</div>
+    </div>
+    <div class="visual" aria-label="Illustration of a daily planner">
+      <div class="planner">
+        <div class="planner-top"><span>DAYORA / DAILY</span><span>01 — 07</span></div>
+        <h3>A day, well planned.</h3><div class="planner-date">A little structure. A little more breathing room.</div>
+        <div class="task"><span class="check"></span> Make time for what matters</div><div class="task"><span class="check"></span> Take care of the essentials</div><div class="task"><span class="check"></span> Make progress, one step at a time</div>
+        <div class="mini-grid"><span>M</span><span>T</span><span class="active">W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="collections">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">The DAYORA collections</div><h2>Little tools. More organised days.</h2><p>Practical, easy-to-use digital resources designed for different parts of everyday life.</p></div>
+    <div class="categories">
+      <article class="category"><div class="cat-icon">01</div><h3>Life & planning</h3><p>Daily routines, weekly plans and goals, all in one place.</p></article>
+      <article class="category"><div class="cat-icon">02</div><h3>Money & budgeting</h3><p>Simple ways to plan spending, track savings and feel more organised.</p></article>
+      <article class="category"><div class="cat-icon">03</div><h3>Study & learning</h3><p>Revision schedules, assignment trackers and study organisation.</p></article>
+      <article class="category"><div class="cat-icon">04</div><h3>Home & everyday</h3><p>Meal plans, shopping lists and household organisation.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section feature" id="our-approach">
+  <div class="wrap feature-grid">
+    <div class="feature-art"><div class="stack"><div class="sheet back"><small>DAYORA / WEEKLY</small><strong>Your week,<br>in view.</strong><div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div></div><div class="sheet front"><small>DAYORA / NOTES</small><strong>Make room<br>for ideas.</strong><div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div></div></div></div>
+    <div class="feature-copy"><div class="eyebrow">Designed for real life</div><h2>Useful, uncomplicated, considered.</h2><p>We believe getting organised should feel straightforward. DAYORA is being created around clear layouts, practical details and flexible resources that can fit different routines and stages of life.</p><ul class="ticks"><li>Simple to understand and use</li><li>Designed for digital use or printing where suitable</li><li>Made for everyday needs, not perfection</li></ul></div>
+  </div>
+</section>
+<section class="section" id="coming-soon">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">The first collection</div><h2>Something useful is on its way.</h2><p>We're preparing our first range of DAYORA digital resources. Product previews below are concepts, not products available to buy yet.</p></div>
+    <div class="coming">
+      <article class="product"><div class="product-art"><div class="mock"><small>DAYORA / DAILY</small><b>Everyday<br>Planner</b><i></i><i></i><i></i><i></i></div></div><h3>Everyday Planner</h3><p>A calm, flexible place for plans, priorities and notes.</p><span class="tag">Coming soon</span></article>
+      <article class="product"><div class="product-art"><div class="mock"><small>DAYORA / MONEY</small><b>Budget<br>Planner</b><i></i><i></i><i></i><i></i></div></div><h3>Budget Planner</h3><p>A straightforward overview of spending, saving and goals.</p><span class="tag">Coming soon</span></article>
+      <article class="product"><div class="product-art"><div class="mock"><small>DAYORA / STUDY</small><b>Study<br>Planner</b><i></i><i></i><i></i><i></i></div></div><h3>Study Planner</h3><p>Keep track of subjects, assignments and revision sessions.</p><span class="tag">Coming soon</span></article>
+    </div>
+  </div>
+</section>
+<section class="statement"><h2>Make everyday feel a little more manageable.</h2><p>DAYORA — thoughtfully designed for the life you're living.</p></section>
+</main>
+<footer><div class="wrap footer-row"><div><div class="footer-logo">DAYORA</div><p>Thoughtfully designed tools for everyday life.</p></div><div class="footer-note">A new digital lifestyle brand.<br>Products launching soon.</div></div></footer>
+<script>
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));
+</script>
+</body>
+</html>
